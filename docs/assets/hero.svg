@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">ECG Analog Front End</title>
+  <desc id="desc">心电模拟前端项目封面。装饰波形不表示实测数据。设计、仿真、PCB 和硬件测试。</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1729"/><stop offset="1" stop-color="#163c4b"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#96cad8" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="24" fill="url(#grid)"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="52" y="44" width="226" height="30" rx="15" fill="#71ead2" fill-opacity=".12"/>
+    <circle cx="70" cy="59" r="4" fill="#75ead1"/>
+    <text x="85" y="64" fill="#a2f4e4" font-size="12" letter-spacing="2">ANALOG HARDWARE LAB</text>
+    <text x="50" y="153" fill="#f2f8fc" font-size="66" font-weight="700" letter-spacing="-2">ECG</text>
+    <text x="52" y="209" fill="#f2f8fc" font-size="44" font-weight="600" letter-spacing="-1">Analog Front End</text>
+    <text x="54" y="251" fill="#a7c3d2" font-size="18">Circuit design. Simulation. Hardware validation.</text>
+    <path d="M740 169H782L797 157L814 169H835L850 195L868 96L889 237L908 162L928 169H952Q969 135 987 169H1144" fill="none" stroke="#79eed9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1144" cy="169" r="6" fill="#79eed9"/>
+    <text x="846" y="281" fill="#86a9bb" font-size="11" letter-spacing="2">ILLUSTRATIVE SIGNAL</text>
+    <path d="M52 309H1148" stroke="#78a5b8" stroke-opacity=".25"/>
+    <g fill="#d9e8ef" font-size="14" letter-spacing="1.5">
+      <text x="52" y="360">01 / DESIGN</text><text x="335" y="360">02 / SIMULATE</text><text x="638" y="360">03 / BUILD</text><text x="934" y="360">04 / MEASURE</text>
+    </g>
+    <g fill="#88a8b9" font-size="12"><text x="52" y="384">OP07 + TL084</text><text x="335" y="384">MULTISIM</text><text x="638" y="384">SCHEMATIC + PCB</text><text x="934" y="384">LAB RECORDS</text></g>
+  </g>
+</svg>

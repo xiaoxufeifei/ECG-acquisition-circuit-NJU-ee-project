@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="420" viewBox="0 0 1240 420" role="img" aria-labelledby="title desc">
+  <title id="title">心电模拟前端信号链路</title>
+  <desc id="desc">输入依次通过仪放、高通、增益、陷波、低通与电平抬升。右腿驱动从仪放两个输入级输出取样，驱动模拟器 RL。参考电压接电平抬升级。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#557b90"/></marker></defs>
+  <rect width="1240" height="420" rx="18" fill="#f3f7fa"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="34" y="42" font-size="15" fill="#54758b" letter-spacing="2">SIGNAL PATH / 信号链路</text>
+    <text x="34" y="77" font-size="16" fill="#48687c">毫伏级差分输入</text>
+    <text x="1205" y="77" text-anchor="end" font-size="16" fill="#48687c">模拟输出 → 后续 ADC</text>
+    <g stroke="#d6e1e8" fill="white">
+      <rect x="34" y="99" width="168" height="126" rx="12"/>
+      <rect x="234" y="99" width="168" height="126" rx="12"/>
+      <rect x="434" y="99" width="168" height="126" rx="12"/>
+      <rect x="634" y="99" width="168" height="126" rx="12"/>
+      <rect x="834" y="99" width="168" height="126" rx="12"/>
+      <rect x="1034" y="99" width="172" height="126" rx="12"/>
+    </g>
+    <g stroke="#557b90" stroke-width="2" marker-end="url(#arrow)"><path d="M203 161H230"/><path d="M403 161H430"/><path d="M603 161H630"/><path d="M803 161H830"/><path d="M1003 161H1030"/></g>
+    <g font-size="22" font-weight="bold" fill="#173b50" text-anchor="middle">
+      <text x="118" y="146">仪用放大</text><text x="318" y="146">高通</text><text x="518" y="146">可调增益</text><text x="718" y="146">50 Hz 陷波</text><text x="918" y="146">四阶低通</text><text x="1120" y="146">电平抬升</text>
+    </g>
+    <g font-size="16" fill="#5c7889" text-anchor="middle">
+      <text x="118" y="180">三运放结构</text><text x="318" y="180">抑制低频漂移</text><text x="518" y="180">校准整机倍率</text><text x="718" y="180">Fliege</text><text x="918" y="180">Sallen-Key × 2</text><text x="1120" y="180">叠加直流参考</text>
+      <text x="118" y="205">OP07</text><text x="318" y="205">RC 网络</text><text x="518" y="205">TL084</text><text x="718" y="205">TL084</text><text x="918" y="205">TL084 + OP07</text><text x="1120" y="205">OP07</text>
+    </g>
+    <g fill="none" stroke="#557b90" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrow)"><path d="M118 227V299"/><path d="M1120 301V230"/></g>
+    <text x="137" y="268" font-size="14" fill="#607e8e">两个输入级输出取样</text>
+    <rect x="34" y="304" width="222" height="71" rx="12" fill="#e0f2ed" stroke="#bbdbd1"/>
+    <text x="145" y="333" text-anchor="middle" font-size="20" fill="#24594e">右腿驱动 · OP07</text>
+    <text x="145" y="358" text-anchor="middle" font-size="14" fill="#477267">反相求和与补偿</text>
+    <path d="M259 339H343" stroke="#557b90" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="367" y="346" font-size="19" fill="#48687c">模拟器 RL 端</text>
+    <rect x="1007" y="304" width="199" height="71" rx="12" fill="#e0f2ed" stroke="#bbdbd1"/>
+    <text x="1106" y="333" text-anchor="middle" font-size="20" fill="#24594e">参考电压</text>
+    <text x="1106" y="358" text-anchor="middle" font-size="14" fill="#477267">VREF ≈ 1.65 V</text>
+  </g>
+</svg>
